@@ -28,7 +28,7 @@ const uri = process.env.MONGO_URI;
 
 async function connect() {
     try {
-        await mongoose.connect(uri);
+        await mongoose.connect("mongodb+srv://krish:pharmacy@cluster0.8txhcee.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
         console.log('Connected to database');
 
     } catch (err) {
